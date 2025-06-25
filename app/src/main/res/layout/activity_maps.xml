@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+    <ImageView
+        android:src="@drawable/ueasel"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="4dp"
+        tools:context=".MapsActivity"
+        />
+
+    <ImageView
+        android:src="@drawable/seasel"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="150dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/burlywood"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/buttonComp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/tomato"
+            android:textSize="20dp"
+            android:text="完成"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="線の削除"
+            android:backgroundTint="@color/gold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/burlywood">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/ehude" />
+
+            <ToggleButton
+                android:id="@+id/toggleGPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/burlywood"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="4dp"
+            android:id="@+id/white"
+            android:text="白"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:backgroundTint="@color/forestgreen"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="4dp"
+            android:id="@+id/map_re"
+            android:text="元に戻す"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:backgroundTint="@color/deepskybule"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="4dp"
+            android:id="@+id/startReturn"
+            android:text="お題変更"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:backgroundTint="@color/violet"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+

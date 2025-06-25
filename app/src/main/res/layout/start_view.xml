@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="15"
+    android:background="@drawable/nasca_hachidori"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/appname"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:text="Earth Canvas"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="60dp"/>
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="2"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/cat" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/robo"
+        android:scaleType="fitEnd"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:text="スタート"
+        android:layout_weight="2"
+        android:backgroundTint="@color/darkgreen"
+        android:textSize="35dp"/>
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="2"-->
+<!--        android:scaleType="fitStart"-->
+<!--        android:src="@drawable/bird" />-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/themebutton"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:backgroundTint="@color/brown"
+        android:text="お題"
+        android:textSize="35dp"/>
+
+    <TextView
+        android:id="@+id/themeview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal"
+        android:text="お題を決めよう！"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+
+<!--    <ImageView-->
+<!--        android:src="@drawable/fish"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:scaleType="fitEnd"-->
+<!--        android:layout_weight="2"/>-->
+
+
+</LinearLayout>
+
+<!--mainactivityのしたを茶色に変更する-->
