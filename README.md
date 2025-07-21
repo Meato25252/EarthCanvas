@@ -66,8 +66,6 @@ AIによる絵の判定機能の実装においては、以下の公開情報を
 
 アプリ起動後、ユーザーの移動を地図上に描画していく様子を示しています。
 
-
-
 ---
 
 ## 📌 注意事項
@@ -75,3 +73,19 @@ AIによる絵の判定機能の実装においては、以下の公開情報を
 このアプリは学習目的で開発されたものであり、商用利用は想定していません。
 
 ---
+
+## 🔧 実機確認・ビルドの前に（Google Maps APIキーの設定）
+
+このアプリでは Google Maps SDK を使用しています。実機で動作確認を行うには、Google Cloud Console から取得した APIキーを `local.properties` に設定してください。
+
+### 1. Google Maps APIキーの取得
+
+Google Cloud Console にログインし、[Maps SDK for Android](https://console.cloud.google.com/) を有効化して、APIキーを取得してください。
+
+### 2. `local.properties` に以下を追記
+
+MAPS\_API\_KEY=あなたのAPIキー
+
+以上で、APIキーがアプリに埋め込まれ、地図機能が有効になります。
+
+
