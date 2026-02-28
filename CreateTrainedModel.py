@@ -1,4 +1,3 @@
-```python
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
@@ -70,6 +69,3 @@ tflite_model = converter.convert()
 # TFLiteモデルの保存
 with open('quickdraw_model.tflite', 'wb') as f:
     f.write(tflite_model)
-
-
-```
